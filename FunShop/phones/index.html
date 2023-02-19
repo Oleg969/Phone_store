@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div class="inform">
+        <a href="/index.html">Головна</a>   <span>></span>   Смартфони на ваш вибір
+        <p>Мобільні телефони</p>
+    </div>
+    <div class="sidenav">
+        <div class="sidenav-div">
+            <details class="side">
+                <summary> Бренд</summary>
+                <div class="side1">
+                    <div class="side3">
+                        <a><input type="checkbox"> Apple</a>
+                        <a><input type="checkbox"> Huawei</a>
+                        <a><input type="checkbox"> Asus</a>
+                        <a><input type="checkbox"> Motorola</a>
+                        <a><input type="checkbox"> Nokia</a>
+                        <a><input type="checkbox"> OPPO</a>
+                        <a><input type="checkbox"> Samsung</a>
+                        <a><input type="checkbox"> Xiaomi</a>
+                        <a><input type="checkbox"> realme</a>
+                        <a><input type="checkbox"> Poco</a>
+                        <a><input type="checkbox"> Doogee</a>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Ціна</summary>
+                <div class="side1">
+                    <input class="side4" type="text"> - <input class="side4" type="text"><button>ОК</button>
+                    <p>1<input type="range" min="0" max="100" step="0.01" value="25" class="range" oninput="range()">100000</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Діагональ екрана</summary>
+                <div class="side2">
+                    <p><input type="checkbox"> 4.59" і менше</p>
+                    <p><input type="checkbox"> 4.6" - 5"</p>
+                    <p><input type="checkbox"> 5.01" - 5.5"</p>
+                    <p><input type="checkbox"> 5.55" - 6"</p>
+                    <p><input type="checkbox"> 6.01" - 6.49"</p>
+                    <p><input type="checkbox"> 6.5" та більше</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Оперативна пам'ять</summary>
+                <div class="side1">
+                    <p><input type="checkbox">10 ГБ</p>
+                    <p><input type="checkbox">12 ГБ</p>
+                    <p><input type="checkbox">16 ГБ</p>
+                    <p><input type="checkbox">18 ГБ</p>
+                    <p><input type="checkbox">2 ГБ І МЕНШЕ</p>
+                    <p><input type="checkbox">3 ГБ</p>
+                    <p><input type="checkbox">32 ГБ</p>
+                    <p><input type="checkbox">4 ГБ</p>
+                    <p><input type="checkbox">6 ГБ</p>
+                    <p><input type="checkbox">8 ГБ</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Вбудована пам'ять</summary>
+                <div class="side1">
+                    <p><input type="checkbox">1 ТБ</p>
+                    <p><input type="checkbox">128 ГБ</p>
+                    <p><input type="checkbox">16 ГБ І МЕНШЕ</p>
+                    <p><input type="checkbox">256 ГБ</p>
+                    <p><input type="checkbox">32 ГБ</p>
+                    <p><input type="checkbox">512 ГБ</p>
+                    <p><input type="checkbox">64 ГБ</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Ємність акумулятора</summary>
+                <div class="side1">
+                    <p><input type="checkbox"> 2999 мА*год і менше</p>
+                    <p><input type="checkbox"> 3000 - 3999 мА*год</p>
+                    <p><input type="checkbox"> 4000 - 4999 мА*год</p>
+                    <p><input type="checkbox"> 5000 - 5999 мА*год</p>
+                    <p><input type="checkbox"> 6000 мА*год та більше</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Роз'єми</summary>
+                <div class="side1">
+                    <p><input type="checkbox">2.5 mm Mini-Jack</p>
+                    <p><input type="checkbox">3.5 mm Mini-Jack</p>
+                    <p><input type="checkbox">Lightning</p>
+                    <p><input type="checkbox">Micro-USB</p>
+                    <p><input type="checkbox">Mini-USB</p>
+                    <p><input type="checkbox">USB</p>
+                    <p><input type="checkbox">USB Type-C</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Основна камера</summary>
+                <div class="side1">
+                    <p><input type="checkbox">100 Мп і більше</p>
+                    <p><input type="checkbox">16 - 20.7 Мп</p>
+                    <p><input type="checkbox">21 - 48 Мп</p>
+                    <p><input type="checkbox">49 - 64 Мп</p>
+                    <p><input type="checkbox">5 Мп і менше</p>
+                    <p><input type="checkbox">6 - 8.7 Мп</p>
+                    <p><input type="checkbox">9 - 15 Мп</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Кількість основних камера</summary>
+                <div class="side1">
+                    <p><input type="checkbox">1</p>
+                    <p><input type="checkbox">2</p>
+                    <p><input type="checkbox">3</p>
+                    <p><input type="checkbox">4</p>
+                    <p><input type="checkbox">5 і більше</p>
+                    <p><input type="checkbox">Без основної камери</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Фронтальна камера</summary>
+                <div class="side1">
+                    <p><input type="checkbox">17 - 20 Мп</p>
+                    <p><input type="checkbox">21 - 30 Мп</p>
+                    <p><input type="checkbox">31 - 39 Мп</p>
+                    <p><input type="checkbox">40 Мп і більше</p>
+                    <p><input type="checkbox">8 Мп і більше</p>
+                    <p><input type="checkbox">9 - 16 Мп</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Назва процесора</summary>
+                <div class="side1">
+                    <p><input type="checkbox">Apple</p>
+                    <p><input type="checkbox">HiSilicon Kirin</p>
+                    <p><input type="checkbox">MediaTek</p>
+                    <p><input type="checkbox">Samsung Exynos</p>
+                    <p><input type="checkbox">Unisoc</p>
+                    <p><input type="checkbox">Інші</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side"> 
+                <summary>Розміщення фронтальної камери</summary>
+                <div class="side1">
+                    <p><input type="checkbox">Виріз</p>
+                    <p><input type="checkbox">Крапелька</p>
+                    <p><input type="checkbox">Підекранна</p>
+                    <p><input type="checkbox">Чубчик</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Частота оновлення екрана</summary>
+                <div class="side1">
+                    <p><input type="checkbox">120 ГЦ</p>
+                    <p><input type="checkbox">144 ГЦ</p>
+                    <p><input type="checkbox">165 ГЦ</p>
+                    <p><input type="checkbox">60 ГЦ</p>
+                    <p><input type="checkbox">90 ГЦ</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Cтандарт зв'язку</summary>
+                <div class="side1">
+                    <p><input type="checkbox">2G/3G</p>
+                    <p><input type="checkbox">4G (LTE)</p>
+                    <p><input type="checkbox">5G</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Операційна система</summary>
+                <div class="side1">
+                    <p><input type="checkbox">Android</p>
+                    <p><input type="checkbox">iOS</p>
+                    <p><input type="checkbox">Інша</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Кількість SIM-карток</summary>
+                <div class="side1">
+                    <p><input type="checkbox">1</p>
+                    <p><input type="checkbox">2</p>
+                    <p><input type="checkbox">3</p>
+                    <p><input type="checkbox">4</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Матеріал корпуса</summary>
+                <div class="side1">
+                    <p><input type="checkbox">Інша</p>
+                    <p><input type="checkbox">Метал</p>
+                    <p><input type="checkbox">Пластик</p>
+                    <p><input type="checkbox">Скло</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Особливості корпусу</summary>
+                <div class="side1">
+                    <p><input type="checkbox">Безрамковий дисплей</p>
+                    <p><input type="checkbox">Водонепроникні</p>
+                    <p><input type="checkbox">З двома екранами</p>
+                    <p><input type="checkbox">З клавіатурою</p>
+                    <p><input type="checkbox">Зі знімною батареєю</p>
+                </div>
+            </details>
+        </div>
+        <div class="sidenav-div">
+            <details class="side">
+                <summary>Колір</summary>
+                <div class="sideLast">
+                    <p><input type="checkbox">Інші</p>
+                    <p><input type="checkbox">Білий</p>
+                    <p><input type="checkbox">Жовтий</p>
+                    <p><input type="checkbox">Зелений</p>
+                    <p><input type="checkbox">Золотий</p>
+                    <p><input type="checkbox">Рожевий</p>
+                    <p><input type="checkbox">Синій</p>
+                    <p><input type="checkbox">Сріблястий</p>
+                    <p><input type="checkbox">Сірий</p>
+                    <p><input type="checkbox">Фіолетовий</p>
+                    <p><input type="checkbox">Червоний</p>
+                    <p><input type="checkbox">Чорний</p>
+                </div>
+            </details>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <ul class="hr">
+            <li><div class="goods-tile"><a href="/phones/Apple iPhone 11 128 GB White/index.html" ><img src="/images/Samsung Galaxy M33 6 128GB Green/263857427.webp"></a></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone 13 128GB Midnight/221026603.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Samsung Galaxy A33 5G 6 128GB Orange/263965151.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone 14 Plus 128GB Starlight/284983293.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone 14 128 GB Purple/284913534.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Motorola G32 6 128GB Grey/301433932.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi Note 11S 6 128GB/250730060.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Samsung Galaxy S23 8 128GB Phantom/310594230.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone 11 128 GB White/37399337.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Realme C33 4 64GB Night Sea/294745063.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Samsung Galaxy S23 Plus 8 256GB Green/310636649.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi 10 2022 4 64GB Carbon/220468025.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi Note 11 4 128 GB Star/250769169.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Samsung Galaxy S23 Ultra 12 256GB Light/310655484.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone 14 Pro 256GB Space/284920771.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Apple iPhone SE 64GB 2022 Midnight/259453399.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Asus ROG Phone 5 Ultimate 18 512GB ZS673KS/301692200.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Nokia C21 Plus 3 32 Dark Cyan/266459030.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Nokia G11 4 64 Ice/266459386.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Asus ROG Phone 6 12 256GB Phantom Black/294478350.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Huawei Nova 8i Starry Black/291927331.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Asus ROG Phone 6D 16 256GB Space Grey/305781097.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Huawei P20 Lite Nova 3e 4 128Gb blue/306260577.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Huawei P30 Lite 6 128GB Pearl White/261647691.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Nokia G11 Plus 4 64GB Grey/282149568.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Doogee S58 Pro 6 64 GB Black/178058413.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Doogee S89 PRO 8 256GB Black/311058713.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Doogee V10 8 128GB Global NFC/311765309.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Realme 9 Pro Plus 8 256GB Aurora Green/305642519.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Realme C35 4 64GB Glowing Black/282909951.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Motorola E40 4 64GB Carbon Grey/278385767.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Motorola Moto E20 2 32GB Graphite/220890145.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Oppo A17 4 64GB Midnight Black/299106281.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Oppo A55 4 64GB Rainbow Blue/281070363.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Oppo Reno 7 8 128GB Sunset Orange/293926277.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Poco C40 4 64GB Coral Green/279977650.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Poco M5s 6 128GB Grey/307163268.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Poco X5 Pro 5G 8 256GB Blue/311380791.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi 10C 4 64GB Graphite Grey/265575166.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi 9A 2 32GB Glacial Blue/269024682.webp"></div></li>
+            <li><div class="goods-tile"><img src="/images/Xiaomi Redmi 9C 2 32GB Midnight Grey/144090568.webp"></div></li>
+        </ul>
+    </div>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>

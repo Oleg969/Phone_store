@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-style: normal;
+    font-family: 'Times New Roman', serif;
+    margin-top: 0px;
+    align-content: center;
+}
+.layout {
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    width: 1530px;
+    height: 62px;
+    background-color: rgb(247, 255, 2);
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+.inform{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 2;
+    overflow-x: hidden;
+    color:#000000;
+}
+.inform a {
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    color:rgb(30, 133, 236);
+}
+.inform a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+.inform p{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inform span{
+    color:#9d9d9d;
+}
+.inform1{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 2;
+    overflow-x: hidden;
+    color:#000000;
+}
+.inform1 a {
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    color:rgb(30, 133, 236);
+}
+.inform1 a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+.inform1 p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inform1 span{
+    color:#9d9d9d;
+}
+
+.logo {
+    position: absolute;
+    left: 11%;
+    top: 0;
+    cursor: pointer;
+}
+.logo1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.walllogo {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 62px;
+    background-color: rgb(247, 255, 2);
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+.search-container {
+    width: 750px;
+    margin: auto;
+    position: absolute;
+    right: 60px;
+    top: 10%;
+}
+.search{
+    width: 87.8%;
+}
+.submit{
+    width: 10%;
+}
+#topnav{
+    float: left;
+    overflow: hidden;
+}
+.layout .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(108, 102, 102);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+   
+}
+  
+.layout input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+  
+.layout .search-container button:hover {
+    background: rgb(225, 10, 10);
+}
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    border: solid #676767;
+    border-width: 0px 2px 2px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    cursor: pointer;
+}
+.sidenav span {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #6d6d6d;
+    display: block;
+}
+
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+.side1 {
+    border: solid #676767;
+    padding-top: 20px;
+    width: 100%;
+    border-width: 0px 0px 2px 0px;
+}
+.side2 {
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top:60px;
+    left:20%;
+    padding-left: 20px;
+    background-color: #70fa5e;
+}
+
+.wallnow {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -20%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 1px solid none;
+}
+.wallnow a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.wallnow span {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #6d6d6d;
+    display: block;
+    transition: 0.3s;
+}
+
+.wallnow a:hover {
+    color: #919191;
+}
+
+ .opacity{
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+.wallnow .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#000000;
+}
+.catalog{
+    position: absolute;
+    left: 30%;
+    cursor: pointer;
+    top: 25%;
+    font-size: 25px;
+    color: #000000;
+    font-style: normal;
+}
+.overlay{
+    height: 80%;
+    width: 90%;
+    position: fixed;
+    z-index: 3; 
+    left: 5%;
+    top: -80%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block; 
+    transition: 0.3s; 
+}
+.overlay a:hover, .overlay a:focus {
+    color: #919191;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.menu{
+    color:#000000;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 8px;
+}
+@media screen and (max-width: 600px) {
+.layout .search-container {
+    float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.layout input[type=text] {
+    border: 1px solid #ccc;  
+}
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/guarantee/index.html">Гарантія і повернення товару</a> <span>></span>   <a href="/product-return/index.html">Повернення товару</a>   <span>></span>   Чи всі товари можна повернути?
+            <h1>Чи всі товари можна повернути?</h1>
+        </div>
+        <div class="inform1">
+            <p>На жаль, не всі. Окрім товарів, які були у використанні, згідно із Законом України «Про захист прав споживачів» повернути також не можна:</p>
+            <ul>
+                <li>продовольчі товари, лікарські препарати та засоби, предмети сангігієни</li>
+                <li>фотоплівки, фотопластинки, фотографічний папір</li>
+                <li>корсетні товари</li>
+                <li>парфумерно-косметичні вироби</li>
+                <li>пір'яно-пухові вироби</li>
+                <li>дитячі іграшки м'які</li>
+                <li>дитячі іграшки гумові надувні</li>
+                <li>зубні щітки</li>
+                <li>мундштуки</li>
+                <li>апарати для гоління</li>
+                <li>помазки для гоління</li>
+                <li>розчіски, гребінці та щітки масажні</li>
+                <li>сурдини (для духових музичних інструментів)</li>
+                <li>скрипічні підборіддя</li>
+                <li>рукавички</li>
+                <li>тюлегардинні і мереживні полотна</li>
+                <li>килимові вироби метражні</li>
+                <li>білизну натільну</li>
+                <li>білизну постільну</li>
+                <li>панчішно-шкарпеткові вироби</li>
+                <li>товари в аерозольній упаковці</li>
+                <li>друковані видання</li>
+                <li>лінійний та листковий металопрокат, трубну продукцію, пиломатеріали, погонажні (плінтус, наличник), плитні матеріали (деревноволокнисті та деревностружкові плити, фанера) і скло, нарізані або розкроєні під розмір, визначений покупцем (замовником)</li>
+                <li>аудіо-, відеокасети, диски для лазерних систем зчитування із записом</li>
+                <li>вироби з натурального та штучного волосся (перуки)</li>
+                <li>товари для немовлят (пелюшки, соски, пляшечки для годування тощо)</li>
+                <li>інструменти для манікюру, педикюру (ножиці, пилочки тощо)</li>
+                <li>ювелірні вироби з дорогоцінних металів, дорогоцінного каміння, дорогоцінного каміння органогенного утворення та напівдорогоцінного каміння</li>
+            </ul>
+            
+            <p>Інформацію про повернення конкретного товару шукайте в графі Гарантія у картці товару. Якщо товар не можна повернути, це обов'язково буде вказано.</p>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
