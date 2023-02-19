@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/delivery-and-payment/index.html">Доставка і оплата</a>   <span>></span>   Як діє доставка до точок видачі FUNSHOP?
+            <h1>Як діє доставка до точок видачі FUNSHOP?</h1>
+        </div>
+        <div class="inform1">
+            <h3>Загальні умови</h3>
+            <ol>
+                <li>Термін резерву – 2 дні від планованої дати видачі.</li>
+                <li>Дата видачі вказується під час підтвердження замовлення.</li>
+                <li>Доступна оплата подарунковим сертифікатом.</li>
+                <li>Ви можете оплатити замовлення у магазині карткою або готівкою.</li>
+                <li>Ви можете відмовитися від частини замовлення.</li>
+                <li>У всіх наших магазинах і точках видачі є примірювальні.</li>
+            </ol>
+            <h3>Самовивіз алкоголю і великої побутової техніки</h3>
+            <p>Алкогольні напої та велика побутова техніка доставляються не у всі магазини.</p>
+            <p>Доступні точки видачі ви побачите в кошику на етапі оформлення замовлення.</p>
+            <br><p>Усі адреси та графік роботи</p>
+            <h2>Як замовити товар до мобільної точки видачі?</h2>
+            <h3>Як замовити</h3>
+            <ol>
+                <li>Виберіть товар та оплату карткою.</li>
+                <li>Виберіть спосіб оплати «Самовивіз з мобільних точок видачі» і точку самовивозу.</li>
+                <li>Підтвердьте та оплатіть замовлення онлайн.</li>
+                <li>Отримайте замовлення із документом, що посвідчує особу.</li>
+            </ol>
+            <h3>Умови доставки</h3>
+            <ol>
+                <li>Доставка безкоштовна.</li>
+                <li>Термін зберігання замовлення – 1 день після планованої дати видачі.</li>
+                <li>Доставляються тільки малогабаритні товари за передоплатою.</li>
+                <li>Ювелірні вироби та алкоголь не доставляються.</li>
+            </ol>
+            <p>Більшість наших мобільних точок видачі розміщені на паркмайданчиках у брендованих автомобілях. Їхні адреси і графік роботи дивіться тут.</p>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>

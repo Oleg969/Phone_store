@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/delivery-and-payment/index.html">Доставка і оплата</a>   <span>></span>   Як діє кур’єрська доставка?
+            <h1>Як діє кур’єрська доставка?</h1>
+        </div>
+        <div class="inform1">
+            <h2>Які умови доставки кур’єром Rozetka?</h2>
+            <p>Ви можете замовити доставку кур'єром Rozetka. Послуга доступна тільки в деяких містах і областях. Інформація про можливість доставки кур'єром Rozetka вказана на сторінці товару (не забудьте вказати населений пункт) або в блоці доставка при підтвердженні замовлення на сайті.</p>
+            <p>* Переконайтеся, що у вказаний час отримувач замовлення зможе відповісти на дзвінок кур'єра. У разі відсутності зв'язку  — замовлення буде повернуто на склад.</p>
+            <p>Вартість кур'єрської доставки — <strong>від 98 до 303 грн</strong> в залежності від населеного пункту.</p>
+            <p>Точна вартість доставки розраховується під час оформлення замовлення. Будьте уважні та коректно вказуйте місто доставки.</p>
+            <p>При доставці замовлення кур'єром Rozetka у вас є можливість оплатити замовлення готівкою або платіжною карткою. Оплата карткою при отриманні має певні обмеження.</p>
+            <p><strong>Вартість підйому</strong> до дверей розраховується автоматично під час підтвердження замовлення та залежить від розміру, ваги, поверху і наявності ліфта. Зверніть увагу, <strong>товари, які важать від 100кг - не підіймаються.</strong></p>
+            <p>* Кур’єр <strong>заносить товар</strong> в офісні будівлі лише за наявності місця для паркування автомобіля і в супроводі отримувача.</p>
+            <p>* Працівники компанії <strong>не заносять товари</strong>: у торговельні та розважальні центри, лікарні, гуртожитки, навчальні заклади, на ринки, станції громадського транспорту (метро, зупинки, аеропорти, вокзали).</p>
+            <h2>Які умови доставки кур’єром Нової Пошти?</h2>
+            <h3>Умови доставки</h3>
+            <ol>
+                <li>Термін доставки: <strong>3-5 днів</strong>.</li>
+                <li>Коли замовлення надійде у ваш населений пункт, з вами зв’яжеться працівник Нової пошти для узгодження терміну доставки.</li>
+                <li>Оплата пластиковим подарунковим сертифікатом недоступна. Є можливість використання електронного подарункового сертифіката.</li>
+                <li>Максимальна сума оплати готівкою – <strong>49 999грн</strong>.</li>
+                <li><strong>Алкогольні</strong> напої доставляються лише за передоплати: <strong>безготівковим</strong> розрахунком або <strong>карткою, GPay, ApplePay</strong></li>
+            </ol>
+            <h3>Підіймання на поверх</h3>
+            <p>Підіймання габаритних вантажів оплачується окремо.</p>
+            <p>Необхідність надання послуги та її розрахункову вартість вказує магазин під час оформлення замовлення або за зверненням до нашої служби підтримки .</p>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>

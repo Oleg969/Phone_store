@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/delivery-and-payment/index.html">Доставка і оплата</a>   <span>></span>   Як діє доставка товарів продавця Rozetka до відділень служб доставки?
+            <h1>Як діє доставка товарів продавця Rozetka до відділень служб доставки?</h1>
+        </div>
+        <div class="inform1">
+            <h2>Які умови доставки до відділень Нової пошти?</h2>
+            <h3>Умови доставки товарів продавця Rozetka</h3>
+            <ol>
+                <li>Термін доставки: 1-3 дні.</li>
+                <li>Термін зберігання – 3 робочих дні.</li>
+                <li>Доступна оплата пластиковим та електронним подарунковим сертифікатом.</li>
+                <li>Неможливо відмовитися від частини замовлення.</li>
+                <li>Коли замовлення надійде до відділення, ви отримаєте SMS-сповіщення.</li>
+                <li>Алкогольні напої та тютюнові вироби доставляються лише у разі оплати карткою онлайн, Gpay, ApplePay чи безготівковим розрахунком.</li>
+            </ol>
+            <h3>Вартість доставки</h3>
+            <p>Вартість доставки однієї одиниці товару залежить від ваги та габаритів.</p>
+            <p>У разі купівлі кількох товарів вартість доставки перераховується.</p>
+
+            <p>При виборі оплати готівкою ви не платите додатково за переведення коштів.
+            <br>Остаточна сума до сплати за товар продавця Rozetka вказується при підтвердженні замовлення.</p>
+
+            <p>Умови доставки товарів інших продавців можуть відрізнятися.</p>
+
+            <h2>Які умови доставки до відділень Укрпошти?</h2>
+            <h3>Загальні умови</h3>
+            <ol>
+                <li>Термін доставки: 2-5 робочих днів.</li>
+                <li>Термін зберігання – 3 робочих дні.</li>
+                <li>Вартість доставки – розраховується при оформленні та залежить від ваги та габаритів.</li>
+                <li>Максимальна вартість замовлення - 25 000 грн</li>
+                <li>Неможливо відмовитися від частини замовлення.</li>
+                <li>Коли замовлення надійде до відділення, ви отримаєте SMS-сповіщення.</li>
+            </ol>
+            <h3>Які товари доставляються?</h3>
+            <ol>
+                <li>Максимальна вага замовлення має бути 30 кг.</li>
+                <li>Максимальна довжина найбільшої сторони товару – 90 см.</li>
+                <li>Максимальна вартість замовлення – 25 000 грн.</li>
+                <li>Крихкі товари не доставляються.</li>
+                <li>Алкогольні напої та тютюнові вироби доставляються лише у разі оплати карткою онлайн, Gpay, ApplePay</li>
+            </ol>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
