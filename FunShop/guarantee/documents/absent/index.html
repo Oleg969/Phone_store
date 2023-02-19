@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/guarantee/index.html">Гарантія і повернення товару</a> <span>></span>   <a href="/guarantee/documents/index.html">Документи</a>   <span>></span>   Що робити, якщо в талоні виробника відсутня печатка?
+            <h1>Що робити, якщо в талоні виробника відсутня печатка?</h1>
+        </div>
+        <div class="inform1">
+            <p>Відповідно до законодавства України, з 2017 року наявність печатки або штампу не є обов’язковою умовою для надання сервісних послуг. Якщо така необхідність все ж виникла, для проставлення штампу можна звернутися до сервісного відділу магазину.</p>
+            <p>Для того, щоб проставити печатку магазину в гарантійному талоні, будь ласка, зверніться з талоном і товарним чеком (чи видатковою накладною) до сервісного відділу магазину.</p>
+            <h2>Як надіслати талон до сервісного відділу?</h2>
+            <p>Якщо у Вашому місті немає сервісних відділів магазину, необхідно відправити талон нам, разом з копією товарного чека (видаткової накладної) та гарантійними документами, які Ви отримали з товаром.</p>
+            <ol>
+                <li>Прийдіть до найближчого відділення Нової Пошти</li>
+                <li>Оформте відправлення за <strong>реквізитами:</strong><br>
+                    Отримувач - <strong>ТОВ «Термінал Розетка», сервіс</strong><br>
+                    код ЄДРПОУ - <strong>33584049</strong><br>
+                    Телефон - <strong>(044) 364-83-65</strong><br>
+                    Вид доставки - <strong>склад-двері</strong>br>
+                    Адреса- <strong>м. Бровари, Броварська об’їзна дорога, 62</strong><br>
+                    Оплата доставки - <strong>коштом відправника</strong><br>
+                    Послуги «Зворотна доставка» і «Післяплата» <strong>треба скасувати</strong>.
+                </li>
+            </ol>
+            
+            
+            
+            <p>При зверненні, будь ласка, вкладіть лист, заповнений у вільній формі, в якому необхідно вказати причину відправки документації. Після отримання, ми внесемо необхідні корективи та відправимо талон назад.</p>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>

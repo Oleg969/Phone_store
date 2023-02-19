@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/delivery-and-payment/index.html">Доставка і оплата</a>   <span>></span>   Як розрахуватися карткою при доставці кур'єром магазину?
+            <h1>Як розрахуватися карткою при доставці кур'єром магазину?</h1>
+        </div>
+        <div class="inform1">
+            <p>Оплата карткою при доставці кур'єром магазину можлива лише у випадку, якщо заявка була оформлена з авторизацією на сайті чи в додатку.</p>
+            <h2>Щоб оплатити замовлення при доставці кур'єром</h2>
+            <ol>
+                <li>При оформленні заявки виберіть тип оплати <strong>"Оплата при отриманні товару"</strong>.</li>
+                <li>Заповніть решту даних для замовлення і натисніть "Замовлення підтверджую".</li>
+                <li>Під час доставки замовлення, зчитайте QR-код з мобільного додатку кур'єра і підтвердьте оплату на своєму мобільному пристрої.</li>
+                <li>Чек про оплату можна завантажити лише на сторінці замовлення в особистому кабінеті. Паперовий чек в такому випадку не надається.</li>
+            </ol>
+            <p><strong>Зверніть увагу</strong>: такий спосіб оплати можливий лише при повній оплаті замовлення.</p>
+            <p>Часткова оплата у разі відмови від товару поки неможлива. В такому разі, замовлення необхідно буде оплатити готівкою.</p>
+            <p>Вартість замовлення не може перевищувати 149 999 грн.</p>
+            <p>Також, поки не можна оплатити карткою при доставці замовлення з розділу <strong>алкогольні та тютюнові вироби або замовлення в яких застосовані подарункові сертифікати</strong>.</p>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>

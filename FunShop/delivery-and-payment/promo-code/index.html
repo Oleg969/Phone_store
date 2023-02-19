@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="inform">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/delivery-and-payment/index.html">Доставка і оплата</a>   <span>></span>   Як використовувати промокод?
+            <h1>Як використовувати промокод?</h1>
+        </div>
+        <div class="inform1">
+            <p>Промокод – це унікальна комбінація символів, завдяки якій ви можете отримати знижку.</p>
+            <h2>Як це працює?</h2>
+            <ol>
+                <li>Знайдіть товар, на який діє промокод, і перейдіть на сторінку товару.</li>
+                <li>Натисніть на посилання <strong>ціна по промокоду</strong> на сторінці товару над назвою продавця.</li>
+                <li>Скопіюйте промокод і натисніть кнопку <strong>Купити</strong>.</li>
+                <li>Під час оформлення замовлення додайте промокод у поле <strong>Ввести промокод</strong> над кнопкою <strong>Замовлення підтверджую</strong>.</li>
+                <li>Натисніть <strong>Застосувати</strong>. Знижку буде застосовано до товару.</li>
+                <li>Натисніть кнопку <strong>Замовлення підтверджую</strong>.</li>
+                <li>Ви оформили замовлення зі знижкою за промокодом!</li>
+            </ol>
+            <h2>Правила застосування промокодів</h2>
+            <ol>
+                <li>Якщо ви отримали <strong>персональний промокод</strong> за участь в конкурсі/акції, переконайтеся, що вибраний вами товар <strong>підходить</strong> для застосування промокоду згідно з умовами акції.</li>
+                <li>Ви можете застосувати <strong>кілька промокодів</strong> в одному замовленні, якщо товар представлено в кількох акціях. Для цього натисніть <strong>+ ще промокод</strong> під введеним промокодом.</li>
+                <li>Знижка за промокодом не сумується з іншими акційними пропозиціями, кредитами, чи промокодами, отриманими за активності на сайті під час купівлі одного товару. Але ви можете використовувати персональний промокод <strong>при купівлі кількох товарів</strong>.</li>
+            </ol>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
