@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+             
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="fn-product-top">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/phones/index.html">Мобільні телефони</a>   <span>></span>   Мобільні телефони Apple 
+            <p>Мобільний телефон Apple iPhone 11 128 GB White</p>
+        </div>
+        <div class="tabs_list">
+            <a><div class="tabs-link">Усе про товар</div></a>
+            <a><div class="tabs-link">Характеристики</div></a>
+            <a><div class="tabs-link">Фото</div></a>
+        </div>
+        <div class="product-about-main">
+            <div class="product-about-left">
+                <div class="slideshow-container">
+                    <img src="/images/Apple iPhone 11 128 GB White/Black/37399220.webp" id="picture1" class="picture1">
+                    <div id="myDIV">
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399220.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399227.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399230.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399233.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399239.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Apple iPhone 11 128 GB White/Black/37399245.webp" class="advertising">
+                        </div>
+                    </div>
+                    <a class="prev" onclick="prevSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="nextSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div class="slider-list" style="text-align: center">
+                    <button type="button" onclick="currentSlide(0)"><img class="dot" onclick="currentSlide(0)" src="/images/Apple iPhone 11 128 GB White/Black/37399220.webp"></button> 
+                    <button type="button" onclick="currentSlide(1)"><img class="dot" onclick="currentSlide(1)" src="/images/Apple iPhone 11 128 GB White/Black/37399227.webp"></button> 
+                    <button type="button" onclick="currentSlide(2)"><img class="dot" onclick="currentSlide(2)" src="/images/Apple iPhone 11 128 GB White/Black/37399230.webp"></button> 
+                    <button type="button" onclick="currentSlide(3)"><img class="dot" onclick="currentSlide(3)" src="/images/Apple iPhone 11 128 GB White/Black/37399233.webp"></button> 
+                    <button type="button" onclick="currentSlide(4)"><img class="dot" onclick="currentSlide(4)" src="/images/Apple iPhone 11 128 GB White/Black/37399239.webp"></button> 
+                    <button type="button" onclick="currentSlide(5)"><img class="dot" onclick="currentSlide(5)" src="/images/Apple iPhone 11 128 GB White/Black/37399245.webp"></button> 
+                </div>
+            </div>
+            <div class="product-about-right">
+                <p>Колір: Black</p>
+                <ul class="hr" >
+                    <li><a href="/phones/Apple iPhone 11 128 GB White/black/index.html" class="active" style="padding-left: 4px"><span style="background-color: rgb(0, 0, 0);"></span></a></li>
+                    <li><a  href="/phones/Apple iPhone 11 128 GB White/index.html" style="padding-left: 4px"><span class="dont-active" style="background-color: rgb(240, 240, 240);"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
+
