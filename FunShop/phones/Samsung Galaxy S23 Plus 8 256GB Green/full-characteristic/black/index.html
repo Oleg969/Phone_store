@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="fn-product-top">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/phones/index.html">Мобільні телефони</a>   <span>></span>   Мобільні телефони Apple 
+            <p>Характеристики Мобільний телефон Samsung Galaxy S23 Plus 8 256GB Black</p>
+        </div>
+        <div class="tabs_list">
+            <div class="tabs_list-sticky">
+                <div>
+                    <a href="/phones/Samsung Galaxy S23 Plus 8 256GB Green/black/index.html"><div class="tabs-link">Усе про товар</div></a>
+                    <a href="/phones/Samsung Galaxy S23 Plus 8 256GB Green/full-characteristic/black/index.html"><div class="tabs-link tabs-link-active">Характеристики</div></a>
+                    <a href="/phones/Samsung Galaxy S23 Plus 8 256GB Green/photo/black/index.html"><div class="tabs-link">Фото</div></a>
+                </div>  
+            </div>  
+        </div>
+        <div class="product-about-main">
+            <div class="product-about-left">    
+                <div class="product-about-characteristic">
+                    <dl>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Серія</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>iPhone 11</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Стандарт зв'язку/інтернету</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Стандарт зв'язку</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>2G (GPRS/EDGE)</li>
+                                        <li>3G (WCDMA/UMTS/HSPA)</li>
+                                        <li>4G (LTE)</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Дисплей</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Діагональ екрана</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>6.1</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Роздільна здатність дисплея</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>1792 х 828</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Тип матриці</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>IPS</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість точок дотику</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>10</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Матеріал екрана</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Скло</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">SIM-картки</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість SIM-карток</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>1</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Розміри SIM-картки</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Nano-SIM</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Функції пам'яті</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Оперативна пам'ять</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>4 ГБ</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Вбудована пам'ять</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>128 ГБ</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Максимальний обсяг підтримуваної карти пам'яті</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Немає</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість контактів у телефонній книзі</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Обмежено пам'яттю самого пристрою</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість номерів на 1 контакт</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Обмежено пам'яттю самого пристрою</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість символів у назві контакту</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Обмежено пам'яттю самого пристрою</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Комбінований слот</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Немає</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Операційна система</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Операційна система</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>iOS</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Фронтальна камера</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Фронтальна камера</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>12 Мп</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Особливості фронтальної камери</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Автофокус</li>
+                                        <li>Одинарна</li>
+                                        <li>Підтримка знімання 4К</li>
+                                        <li>Стабілізація</li>
+                                        <li>Фронтальний спалах</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Розміщення фронтальної камери</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Чубчик</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Вид фронтального спалаху</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Програмний</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Запис відео фронтальної камери</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>4К/3840х2160/стереозвук</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Додатково</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Камера TrueDepth (діафрагма ƒ/2.2)/режим "Портрет" з поліпшеним ефектом боке та функцією "Глибина"/портретне освітлення (шість варіантів: денне світло, студійне світло, контурне світло, сценічне світло, сценічне світло - ч/б, світла тональність - ч/б)/Animoji і Memoji/знімання відео 4 K з частотою 24, 30 або 60 кадрів/сек/знімання HD-відео 1080p з частотою 30 або 60 кадрів/сек/запис уповільненого відео 1080р з частотою 120 кадрів/сек/функція Smart HDR нового покоління для фото/розширений динамічний діапазон під час знімання відео з частотою 30 кадрів/сек/кінематографічна стабілізація відео (4 K, 1080p і 720p)/широкий колірний діапазон для фотографій і Live Photos/спалах Retina Flash/автоматична стабілізація зображення/серійна зйомка</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Процесор</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Назва процесора</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Apple A13 Bionic</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість ядер</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>2+4</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Серія Apple</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Apple Ax Series</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Основна камера</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Основна камера</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>12 Мп + 12 Мп</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Особливості основної камери</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Автофокус</li>
+                                        <li>Підтримка знімання 4К</li>
+                                        <li>Спалах</li>
+                                        <li>Стабілізація</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Кількість основних камер</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>2</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Запис відео основної камери</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>4К/3840х2160/стереозвук</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Додатково</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li><strong>Система двох камер:</strong>надширококутна і ширококутна</li>
+                                        <li><strong>Надширококутна:</strong>діафрагма ƒ/2.4 і кут огляду 120°</li>
+                                        <li><strong>Ширококутна</strong>діафрагма ƒ/1.8</li>
+                                        <li>Дворазовий оптичний зум на зменшення; цифровий зум (до 5 разів)/режим "Портрет" з поліпшеним ефектом боке та функцією "Глибина"/портретне освітлення (шість варіантів: денне світло, студійне світло, контурне світло, сценічне світло, сценічне світло - ч/б, світла тональність - ч/б)/оптична стабілізація зображення (ширококутна камера)/п'ятилінзовий об'єктив (надширококутна камера); шестилінзовий об'єктив (ширококутна камера)/яскравіший спалах True Tone з функцією Slow Sync/панорамна зйомка (з роздільною здатністю до 63 Мп)/підтримка Focus Pixels на всій матриці (ширококутна камера)/нічний режим/автокорекція/функція Smart HDR нового покоління для фото/широкий колірний діапазон для фотографій і Live Photos/передова система усунення ефекту червоних очей/автоматична стабілізація зображення/прив'язка фотографій до місця знімання/формати зображень: HEIF і JPEG/відео 4K з частотою 24, 30 або 60 кадрів/сек/HD-відео 1080p з частотою 30 або 60 кадрів/сек/HD-відео 720p з частотою 30 кадрів/сек/розширений динамічний діапазон під час знімання відео з частотою до 60 кадрів/сек/кінематографічна стабілізація відео (4 K, 1080p і 720p)/можливість фотографування 8 Мп під час запису відео 4 К/збільшення під час відтворення/формати запису відео: HEVC і H.264</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Метод стабілізації</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Оптична</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Живлення</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Ємність акумулятора</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>3046 мА·год</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Матеріали</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Матеріал корпуса</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Алюміній + скло</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Роз'єми</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Роз'єми</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Lightning</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Навігація</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>GPS-навігація</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>A-GPS</li>
+                                        <li>GPS</li>
+                                        <li>ГЛОНАСС</li>
+                                        <li>Цифровий компас</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Розміри</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Вага, г</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>194</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Ширина</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>75.7 мм</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Висота</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>150.9 мм</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Глибина</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>8.3 мм</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Додатково</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Безпека</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Розблокування за обличчям</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Ступінь пило/вологозахисту</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>IP68</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Датчики</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Акселерометр</li>
+                                        <li>Барометр</li>
+                                        <li>Гіроскоп</li>
+                                        <li>Датчик наближення</li>
+                                        <li>Датчик освітлення</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                        <section class="characteristics-group">
+                            <h3 class="characteristics-heading">Загальні характеристики</h3>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Комплект постачання</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Документація</li>
+                                        <li>Кабель для синхронізації</li>
+                                        <li>Скріпка для виймання СІМ-карти</li>
+                                        <li>Телефон</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Бездротові технології</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Bluetooth 5.0</li>
+                                        <li>NFC</li>
+                                        <li>Wi-Fi</li>
+                                        <li>Безпровідна зарядка</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Оснащення</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Швидке заряджання</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Особливості корпусу</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Берамковий дисплей</li>
+                                        <li>Водонепроникні</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Колір</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>White</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Країна-виробник товару</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>Китай</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Країна реєстрації бренду</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>США</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <div class="characteristics-full-item">
+                                <dt class="characteristics-full-label"><span>Гарантія</span></dt>
+                                <dd class="characteristics-full-value">
+                                    <ul>
+                                        <li>12 місяців</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </section>
+                    </dl>
+                    <div class="text product-warning"><p>* <span>Об'єм вбудованої пам'яті залежить від операційної системи, а також встановлених виробником програм.</span></p></div>
+                    <div class="text product-warning"><p>* <span>Характеристики та комплектація товару можуть змінюватися виробником без повідомлення</span></p></div>
+                </div>        
+            </div>
+            <div class="product-about-right">
+                <div class="product-tabs-sidebar">
+                    <div style="padding-left: 20px;">
+                        <div class="product-goods">
+                            <img src="/images/Samsung Galaxy S23 Plus 8 256GB Green/Black/310635394.webp">
+                            <div class="product-goods-title"><p>Характеристики Мобільний телефон Samsung Galaxy S23 Plus 8 256GB Black</p></div>
+                        </div>
+                        <div class="product-buy">
+                            <div class="product-price"><p class="product-price-big">25 499<span class="product-price-symbol">₴</span></p><p class="status-label">Є в наявності</p></div>
+                            <button type="button" class="buy-button">Купити</button>
+                            <button type="button" class="scale-button"><img src="/images/scales.png" height="20px" width="20px"></button>
+                        </div>
+                        <div class="product-seller"><p>Продавець: <strong>FunShop</strong></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
+
