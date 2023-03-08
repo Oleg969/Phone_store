@@ -1,0 +1,697 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    font-style: normal;
+    font-family: 'Times New Roman', serif;
+    margin-top: 0px;
+    align-content: center;
+}
+.layout {
+    overflow: hidden;
+    position: fixed;
+    display: block;
+    width: 1530px;
+    height: 62px;
+    background-color: rgb(247, 255, 2);
+    left: 0px;
+    top: 0px;
+    z-index: 4;
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+.fn-product-top{
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+    z-index: 2;
+    color:#000000;
+}
+.fn-product-top a {
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    color:rgb(30, 133, 236);
+}
+.fn-product-top a:hover{
+    color: #ff0000;
+}
+.fn-product-top p{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fn-product-top span{
+    color:#9d9d9d;
+}
+.tabs_list{
+    text-align: left;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    width: 1217px;
+    height: 1300px;
+}
+.tabs_list a {
+    height: auto;
+    width: auto;
+    color:rgb(5, 66, 126);
+}
+.tabs_list-sticky{
+    position: sticky;
+    top: 60px;
+    min-height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding-top: 0px;
+    padding-left: 20px;
+    z-index: 4;
+    background-color: #c1c1c1;
+    color:#000000;
+    cursor: pointer;
+}
+.tabs-link {
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    padding-top: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: #c1c1c1;
+    border:none;
+}
+.tabs-link-active{
+    color: #00b512;
+    border: solid #00b512;
+    border-width: 0px 0px 3px 0px;
+}
+.tabs-link:hover{
+    color: #00b512;
+    border: solid #00b512;
+    border-width: 0px 0px 3px 0px;
+}
+.logo {
+    position: absolute;
+    left: 11%;
+    top: 0;
+    cursor: pointer;
+}
+.logo1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.walllogo {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 62px;
+    background-color: rgb(247, 255, 2);
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+.search-container {
+    width: 750px;
+    margin: auto;
+    position: absolute;
+    right: 60px;
+    top: 10%;
+}
+.search{
+    width: 87.8%;
+}
+.submit{
+    width: 10%;
+}
+#topnav{
+    float: left;
+    overflow: hidden;
+}
+.layout .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(108, 102, 102);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+   
+}
+  
+.layout input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+  
+.layout .search-container button:hover {
+    background: rgb(225, 10, 10);
+}
+
+.sidenav {
+    position: fixed;
+    height: 1800px;
+    width: 20%;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    border: solid #676767;
+    border-width: 0px 2px 2px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    cursor: pointer;
+}
+.sidenav span {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #6d6d6d;
+    display: block;
+}
+
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+.side1 {
+    border: solid #676767;
+    padding-top: 20px;
+    width: 100%;
+    border-width: 0px 0px 2px 0px;
+}
+.side2 {
+    border: solid #676767;
+    border-width: 0px 0px 2px 0px;
+}
+
+.main {
+    width: 78%;
+    height: 1300px;
+    position: absolute;
+    top:60px;
+    left:20%;
+    padding-left: 20px;
+    background-color: #ffffff;
+}
+
+.wallnow {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -20%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 1px solid none;
+}
+.wallnow a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.wallnow span {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #6d6d6d;
+    display: block;
+    transition: 0.3s;
+}
+
+.wallnow a:hover {
+    color: #919191;
+}
+
+ .opacity{
+    position: fixed;
+    z-index: -1;
+    height: 1500px;
+    width: 100%;
+    left: 0;
+}
+.wallnow .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:#000000;
+}
+.catalog{
+    position: absolute;
+    left: 30%;
+    cursor: pointer;
+    top: 25%;
+    font-size: 25px;
+    color: #000000;
+    font-style: normal;
+}
+.overlay{
+    height: 80%;
+    width: 90%;
+    position: fixed;
+    z-index: 5; 
+    left: 5%;
+    top: -80%;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #000000;
+    display: block; 
+    transition: 0.3s; 
+}
+.overlay a:hover, .overlay a:focus {
+    color: #919191;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.menu{
+    color:#000000;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    left: 5%;
+    top: 8px;
+}
+.product-about-main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:140px
+}
+.advertising{
+    height: 400px;
+    width: auto;
+    z-index: 2;
+}
+.advertising1{
+    width: 400px;
+    height: auto;
+    z-index: 2;
+}
+.mySlides {
+    display: none;
+}    
+img {
+    vertical-align: middle;
+}
+.slideshow-container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 60px;
+    margin: auto;
+}
+.slideshow-container div{
+    text-align: center;
+}
+      /* Кнопки next & previous */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px 20px 12px 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 100%;
+    user-select: none;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.2);
+}
+      /* Измените положение "next button" */
+.next {
+    right: 0;
+}
+      /* Добавьте черный фоновый цвет с небольшой прозрачностью */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+      /* Number text (1/3 etc) */
+.numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.slider-list{
+    position: absolute;
+    height: 40px;
+    top: 420px;
+    left: 60px;
+}
+.slider-list button{
+    cursor: pointer;
+    height: 46px;
+    width: 56px;
+    display: inline-table;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.dot {
+    cursor: pointer;
+    height: 40px;
+    width: auto;
+}
+.dot1 {
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+}
+.slider-list button:hover {
+    border: solid #007202;
+    border-width: 2px 2px 2px 2px;
+}
+      /* Выцветание анимации */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.picture1{
+    position: absolute;
+    height: 400px;
+    width: auto;
+    left: 30px;
+}
+.product-about-left{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+.product-about-right{
+    position: absolute;
+    left:50%;
+    height: 100%;
+    width: 50%;
+}
+.hr{
+    padding: 0; 
+}
+.hr li {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+.hr li:hover {
+    background-color: #fbfbfb;
+}
+.hr span{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+}
+.dont-active1{
+    position: absolute;
+    top: 23px;
+    left: 5px;
+}
+.dont-active2{
+    position: absolute;
+    top: 23px;
+    left: 75px;
+}
+.hr a:hover{
+    cursor: pointer;
+    display:flex;
+    width: 30px;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 0px;
+    border-radius: 25%;
+    border: 1px solid rgb(22, 117, 0);
+}
+.active{
+    position: absolute;
+    left: 35px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px;
+    border-radius: 25%;
+    border: 1px solid rgb(22, 117, 0);
+}
+.product-about{
+    position: absolute;
+    top: 70px;
+    width: 90%;
+    height: 155px;
+    border: 1px solid #e9e9e9;
+}
+.product-trade{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px 16px 16px;
+}
+.preorder-text{
+    position: absolute;
+    top: 100px;
+    border-top: 1px solid #e9e9e9;
+    height: auto;
+    width: 100%;
+    padding: 16px;
+}
+.text{
+    color: #000000;
+    font-size: 14px;
+}
+.product-price-big{
+    font-size: 36px;
+    margin: 15px 0px 0px 0px;
+}
+.product-price-symbol{
+    font-size: 24px;
+}
+.status-label{
+    font-size: 14px;
+    color: #007202;
+}
+.buy-button{
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    color: #fbfbfb;
+    height: 30px;
+    width: 150px;
+    background-color: #007202;
+    border: none;
+    border-radius: 4px;
+    z-index: 3;
+}
+.buy-button:hover{
+    cursor: pointer;
+    background-color: #00b512;
+}
+.scale-button{
+    position: absolute;
+    left: 320px;
+    top: 20px;
+    color: #fbfbfb;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 4px;
+    z-index: 3;
+    padding: 0px;
+}
+.scale-button:hover{
+    cursor: pointer;
+    background-color: #d6d6d6;
+}
+.product-seller{
+    position: absolute;
+    top: 240px;
+    border: 1px solid #e9e9e9;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 0px 0px 0px 16px;
+}
+.product-about-brief{
+    position: absolute;
+    top: 500px;
+    font-size: 14px;
+    padding-right: 50px;
+    line-height: 20px;
+}
+.product-about-block{
+    position:absolute;
+    height: 250px;
+    width: 90%;
+    top: 305px;
+    border: 1px solid #e9e9e9;
+}
+.product-about-payment{
+    font-style: 14px;
+    padding: 16px;
+}
+.product-about-payment-text{
+    position:absolute;
+    top: 20px;
+    left: 80px;
+    padding-right: 50px;
+}
+.product-about-payment-icon{
+    position: absolute;
+    top: 50px;
+    padding: 16px 16px 16px 16px;
+}
+.product-about-guarantee{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    font-style: 14px;
+    padding: 16px;
+    border-top: 1px solid #e9e9e9;
+}
+.product-about-guarantee-icon{
+    padding: 20px 16px 16px 16px;
+}
+.product-about-guarantee-text{
+    position:absolute;
+    top: 30px;
+    left: 80px;
+    padding-right: 50px;
+}
+.product-about-characteristic{
+    position: absolute;
+    width: 50%;
+    top: 650px;
+}
+.product-tabs-heading{
+    margin-bottom: 24px;
+    font-size: 22px;
+    word-break: break-word;
+}
+.characteristics-full-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.characteristics-full-label{
+    position: relative;
+    align-self: flex-start;
+    width: 40%;
+}
+.characteristics-full-label span{
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+    background-color: #fff;
+}
+.characteristics-full-value{
+    width: 60%;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+.characteristics-full-label, .characteristics-full-value{
+font-size: 14px;
+word-break: break-word;
+}
+.characteristics-full-label:before{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    border-bottom: 1px dotted #d2d2d2;
+    content: "";
+}
+ol, ul{
+    list-style: none;
+}
+.product-about-all-link{
+    display: inline-block;
+    font-size: 14px;
+}
+.product-about-characteristic a{
+    color:#3e77aa;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+.layout .search-container {
+    float: none;
+}
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+.layout input[type=text] {
+    border: 1px solid #ccc;  
+}
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

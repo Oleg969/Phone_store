@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Інтернет-магазин MyShop</title>
+</head>
+<body>
+    <div id="mySidenav" class="wallnow">
+        <div class="wallnow-content">
+            <div class="walllogo"><a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo1" height="60px"></a></div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#" onclick="openCat()" >Каталог товарів</a>
+            <div class="side2">
+                <a href="/help-center/index.html">Довідковий центр</a>
+            </div>
+            <div class="side2">
+                <span>Інформація про компанію</span>
+                <a href="/about-us/index.html">Про нас</a>
+                <a href="/terms-of-use/index.html">Умови використання сайту</a>
+                <a href="/contacts/index.html">Контакти</a>
+            </div>
+            <div class="side2">
+                <span>Допомога</span>
+                <a href="/delivery-and-payment/">Доставка та оплата</a>
+                <a href="/credit/">Кредит</a>
+                <a href="/guarantee/">Гарантія</a>
+                <a href="/product-return/">Повернення товару</a>
+            </div>
+            <div class="side2">
+                <span>Партнерам</span>
+                 
+                <a href="/cooperation/">Співпраця з нами</a>
+            </div>
+        </div>
+    </div>   
+    <div id="myCatalog" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCat()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+    </div> 
+    <div class="layout">
+        <span class="menu" onclick="openNav()">☰</span>
+        <form class="search-container">
+            <input type="text" name="text" class="search" placeholder="Я шукаю..">
+            <button type="submit" name="submit" class="submit" value="Search">Пошук</button>
+        </form>
+        <span class="catalog" onclick="openCat()">Каталог</span>
+        <a href="/index.html"><img src="/images/logo.png" id="topnav" class="logo" height="60px"></a>
+    </div>
+    <div  class="sidenav">
+        <div class="side1">
+        <a href="/phones/index.html">Смартфони на ваш вибір</a>
+        </div>
+        <div class="side2">
+            <a href="/help-center/index.html">Довідковий центр</a>
+        </div>
+        <div class="side2">
+            <span>Інформація про компанію</span>
+            <a href="/about-us/index.html">Про нас</a>
+            <a href="/terms-of-use/index.html">Умови використання сайту</a>
+            <a href="/contacts/index.html">Контакти</a>
+        </div>
+        <div class="side2">
+            <span>Допомога</span>
+            <a href="/delivery-and-payment/">Доставка та оплата</a>
+            <a href="/credit/">Кредит</a>
+            <a href="/guarantee/">Гарантія</a>
+            <a href="/product-return/">Повернення товару</a>
+        </div>
+        <div class="side2">
+            <span>Партнерам</span>
+            <a href="/cooperation/">Співпраця з нами</a>
+        </div>
+    </div>
+    <form class="main" id="main">
+        <div class="fn-product-top">
+            <a href="/index.html">Головна</a>   <span>></span>   <a href="/phones/index.html">Мобільні телефони</a>   <span>></span>   Мобільні телефони Apple 
+            <p>Мобільний телефон Doogee S58 Pro 6 64 GB Black</p>
+        </div>
+        <div class="tabs_list">
+            <div class="tabs_list-sticky">
+                <div>
+                    <a href="/phones/Doogee S58 Pro 6 64 GB Black/index.html"><div class="tabs-link tabs-link-active">Усе про товар</div></a>
+                    <a href="/phones/Doogee S58 Pro 6 64 GB Black/full-characteristic/black/index.html"><div class="tabs-link">Характеристики</div></a>
+                    <a href="/phones/Doogee S58 Pro 6 64 GB Black/photo/black/index.html"><div class="tabs-link">Фото</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-about-main">
+            <div class="product-about-left">
+                <div class="slideshow-container">
+                    <img src="/images/Doogee S58 Pro 6 64 GB Black/178058407.webp" id="picture1" class="picture1">
+                    <div id="myDIV">
+                        <div class="mySlides fade">
+                            <img src="/images/Doogee S58 Pro 6 64 GB Black/178058407.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Doogee S58 Pro 6 64 GB Black/178058413.webp" class="advertising">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/Doogee S58 Pro 6 64 GB Black/Black/178058409.webp" class="advertising">
+                        </div>
+                    </div>
+                    <a class="prev" onclick="prevSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="nextSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div class="slider-list" style="text-align: center">
+                    <button type="button" onclick="currentSlide(0)"><img class="dot" onclick="currentSlide(0)" src="/images/Doogee S58 Pro 6 64 GB Black/178058407.webp"></button> 
+                    <button type="button" onclick="currentSlide(1)"><img class="dot" onclick="currentSlide(1)" src="/images/Doogee S58 Pro 6 64 GB Black/178058413.webp"></button> 
+                    <button type="button" onclick="currentSlide(2)"><img class="dot" onclick="currentSlide(2)" src="/images/Doogee S58 Pro 6 64 GB Black/Black/178058409.webp"></button>
+                </div>
+                <div class="product-about-brief">
+                    <p>Екран (6.1", IPS (Liquid Retina HD), 1792x828) / Apple A13 Bionic / основна подвійна камера: 12 Мп + 12 Мп, фронтальна камера: 12 Мп / RAM 4 ГБ / 128 ГБ вбудованої пам'яті / 3G / LTE / GPS / ГЛОНАСС / Nano-SIM / iOS 13 / 3046 мА·год
+                    <br>
+                    <br>
+                    зарядним блоком і навушниками не комплектується.</p>
+                </div>
+            </div>
+            <div class="product-about-right">
+                <p>Колір: Black</p>
+                <ul class="hr" >
+                    <li><a href="/phones/Doogee S58 Pro 6 64 GB Black/green/index.html" style="padding-left: 4px"><span class="dont-active1" style="background-color: green;"></span></a></li>
+                    <li><a href="/phones/Doogee S58 Pro 6 64 GB Black/index.html" class="active" style="padding-left: 4px"><span style="background-color: black;"></span></a></li>
+                    <li><a href="/phones/Doogee S58 Pro 6 64 GB Black/orange/index.html" style="padding-left: 4px"><span class="dont-active2" style="background-color: orange;"></span></a></li>
+                </ul>
+                <div class="product-about">
+                    <div class="product-trade">
+                        <div class="product-price"><p class="product-price-big">25 499<span class="product-price-symbol">₴</span></p><p class="status-label">Є в наявності</p></div>
+                        <button type="button" class="buy-button">Купити</button>
+                        <button type="button" class="scale-button"><img src="/images/scales.png" height="20px" width="20px"></button>
+                    </div>
+                    <div class="preorder-text"><div class="text"><img width="24px" height="24px" src="/images/exclamation-mark.png">Зарядним блоком і навушниками не комплектується!!!</div></div>
+                </div>
+                <div class="product-seller"><p>Продавець: <strong>FunShop</strong></p></div>
+                <div class="product-about-block">
+                    <div class="product-about-payment"><div class="product-about-payment-icon"><img src="/images/coin-wallet.png" height="24px" width="24px"></div><div class="product-about-payment-text"><strong>Оплата.</strong><span> Акційна оплата частинами від ПриватБанк, Оплата під час отримання товару, Google Pay, Картою онлайн, Безготівковими для юридичних осіб, Оплатити онлайн соціальною картою "Пакунок малюка", Безготівковий для фізичних осіб, Оплатити онлайн картою "єПідтримка", Mastercard, Visa, Apple Pay</span></div></div>
+                    <div class="product-about-guarantee"><div class="product-about-guarantee-icon"><img src="/images/guarantee.webp" height="24px" width="24px"></div><div class="product-about-guarantee-text"><strong>Гарантія.</strong><span> 12 місяців Обмін/повернення товару впродовж 14 днів</span></div></div>
+                </div>
+            </div>
+            <div width="100%">
+                <div class="product-about-characteristic">
+                    <h2 class="product-tabs-heading">Характеристики Мобільний телефон Doogee S58 Pro 6 64 GB Black</h2>
+                    <dl>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Серія</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>iPhone 11</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Стандарт зв'язку</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>2G (GPRS/EDGE)</li>
+                                    <li>3G (WCDMA/UMTS/HSPA)</li>
+                                    <li>4G (LTE)</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Діагональ екрана</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>6.1</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Роздільна здатність дисплея</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>1792 x 828</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Тип матриці</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>IPS</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Кількість точок дотику</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>10</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Матеріал екрана</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>Скло</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Кількість SIM-карток</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>1</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Розміри SIM-картки</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>Nano-SIM</li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="characteristics-full-item">
+                            <dt class="characteristics-full-label"><span>Оперативна пам'ять</span></dt>
+                            <dd class="characteristics-full-value">
+                                <ul>
+                                    <li>4 ГБ</li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+                    <a class="product-about-all-link" href="/phones/Doogee S58 Pro 6 64 GB Black/full-characteristic/black/index.html"> Дивитися всі характеристики&nbsp;→</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="opacity" class="opacity"></div>
+</body>
+</html>
+
